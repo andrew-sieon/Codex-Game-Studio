@@ -1,3 +1,16 @@
-Codex Game Studio
+# Codex Game Studio
 
-Codex-oriented game design and prototyping workspace adapted from Claude Code Game Studios. See LICENSE and upstream references.
+Claude Code Game Studios를 참고해 만든 Codex용 게임 제작 작업 공간입니다. 원본은 https://github.com/Donchitos/Claude-Code-Game-Studios 이며 MIT 라이선스를 따릅니다. 기준 커밋은 abc0de7 (1.3.0)입니다.
+
+## 사용하기
+
+1. Codex에서 이 저장소를 프로젝트로 엽니다.
+2. 새 대화에서 자연어로 요청합니다. 예: “게임 아이디어를 같이 생각해 줘”, “고양이 기사가 슬라임을 베는 2D 액션을 만들어 줘”, “이 게임의 타격감을 개선해 줘”.
+3. 원하시는 참고 이미지를 함께 첨부하면 색상, 실루엣, 화면 구성과 움직임을 참고합니다.
+4. 핵심 작업 흐름은 `.agents/skills/game-studio/SKILL.md`에 있습니다. 원본의 다른 작업은 `gs-*` 스킬을 통해 관련 지침을 참조합니다.
+
+## Codex 호환성
+
+이 프로젝트는 Claude Code 원본과 모든 런타임 기능을 1:1로 재현하지 않습니다. Claude의 자동 훅, 권한 설정, 슬래시 명령, 모델 지정과 49개 에이전트는 Codex에서 자동 실행되지 않습니다. Codex용 스킬과 지침은 현재 세션에서 실제 제공되는 도구로 작업하도록 작성되었습니다. 엔진, 브라우저 또는 외부 도구의 설치 여부는 환경에 따라 다릅니다.
+
+`upstream/`은 원본 지침과 참고 자료를 보관하는 경로입니다. 실행 가능한 Codex 자동화로 오해하지 않도록 원본 훅과 설정은 직접 활성화하지 마세요. 원본 저작권 표기와 MIT 라이선스는 보존합니다. 자세한 사용 범위는 `CODEX_GAME_STUDIO.md`를 참고하세요.
